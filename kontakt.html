@@ -1,142 +1,36 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Linkige oma CSS failiga -->
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #eef2f3;
-        }
-
-        header {
-            background: linear-gradient(135deg, #35424a, #35424a);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        section {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input, textarea {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        button {
-            padding: 12px;
-            background-color: #35424a;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.1em;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #35424a;
-        }
-
-        .contact-info {
-            margin-top: 20px;
-            font-size: 1.1em;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #f4f4f4;
-            margin-top: 20px;
-        }
-        nav {
-            margin: 10px 0;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        iframe {
-            border: 0;
-            width: 100%; /* Laius 100% - venitab kaardi lehe laiusele */
-            height: 600px; /* Võite kohandada kõrgust vastavalt vajadusele */
-            border-radius: 5px;
-        }
-    </style>
+    <title>Document</title>
 </head>
-<body>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
     <header>
-        <h1>Võtke meiega ühendust</h1>
-        <nav>
-            <a href="index.html">Esileht</a>
-
-            <a href="hinnakiri.html">Hinnakiri</a>
-        </nav>
-    </header>
-    
-    <section>
-        <form action="#" method="post">
-            <label for="name">Nimi:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-post:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Sõnum:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Saada Sõnum</button>
-        </form>
-
-        <div class="contact-info">
-            <h2>Meie Kontaktandmed</h2>
-            <p><strong>Telefon:</strong> +372 1234 5678</p>
-            <p><strong>E-post:</strong> info@arloremont.ee</p>
-            <p><strong>Aadress:</strong> Sõpruse pst 182, 13424 Tallinn</p>
-            <p><strong>Lahtiolekuajad:</strong> 08:30–21:45</p>
-
-        </div>
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.3039702582786!2d24.70284261501316!3d59.41156258199512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294f175ad851b%3A0x852a40ec29972fa3!2sS%C3%B5pruse%20pst%20182%2C%2013424%20Tallinn!5e0!3m2!1sen!2sfr!4v1695762751234!5m2!1sen!2sfr" 
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"></iframe>
-    
-    </section>
-    <footer>
-        <p>&copy; 2024 Auto Hooldus Platvorm. Kõik õigused kaitstud.</p>
-    </footer>
-</body>
-</html>
+      <div class="logo"><a href="index.html">OLRA</a></div>
+      <div class="menu">
+        <a href="#">
+          <ion-icon name="close" class="close"></ion-icon>
+        </a>
+      </div>
+      <div class="search">
+  
+        <a href=""><input type="text" placeholder="search products" id="input">
+          <ion-icon class="s" name="search"></ion-icon>
+        </a>
+      </div>
+      <div class="heading">
+        <ul>
+          <li><a href="teenused.html" class="under">Teenused</a></li>
+          <li><a href="hinnakiri.html" class="under">Hinnakiri</a></li>
+          <li><a href="hinnaparing.html" class="under">Hinnapäring</a></li>
+          <li><a href="kontakt.html" class="under">Kontakt</a></li>
+          <li><a href="meist.html" class="under">Meist</a></li>
+        </ul>
+      </div>

@@ -1,117 +1,56 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Hooldus Platvorm</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #eef2f3;
-        }
-
-        header {
-            background: linear-gradient(135deg, #35424a, #35424a);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        section {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-
-        #description {
-            display: flex;
-            align-items: center; /* Keskendab pildi ja teksti vertikaalselt */
-        }
-
-        #description img {
-            max-width: 300px; /* Määrab pildi maksimaalse laius */
-            margin-left: 20px; /* Lisa tühik pildi ja teksti vahele */
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #f4f4f4;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Document</title>
 </head>
-<body>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
     <header>
-        <h1>ARLO </h1>
-            <h2>Hooldus & Parandus</h2>
-        <nav>
-            <ul class="nav-bar">
-                <li>
-                    <span class="dropdown-toggle">Teenused</span>
-                    <ul class="dropdown">
-                        <li><a href="autohooldus.html">Autohooldus</a></li>
-                        <li><a href="olivahetus.html">Õlivahetus</a></li>
-                        <li><a href="autodiagnostika.html">Autodiagnostika</a></li>
-                        <li><a href="rehvivahetus.html">Rehvivahetus</a></li>
-                        <li><a href="siduri-vahetus.html">Siduri vahetus</a></li>
-                        <li><a href="hammasrihma-vahetus.html">Hammasrihma vahetus</a></li>
-                        <li><a href="summuti-remont.html">Summuti remont ja vahetus</a></li>
-                        <li><a href="generaatori-remont.html">Generaatori ja Starteri remont</a></li>
-                        <li><a href="mootori-remont.html">Mootori remont ja vahetus</a></li>
-                    </ul>
-                </li>
-                <li><a href="hinnakiri.html">Hinnakiri</a></li>
-                <li><a href="hinnaparing.html">Hinnapäring</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+      <div class="logo"><a href="#">OLRA</a></div>
+      <div class="menu">
+        <a href="#">
+          <ion-icon name="close" class="close"></ion-icon>
+        </a>
+
+      </div>
+      <div class="search">
+  
+        <a href=""><input type="text" placeholder="search products" id="input">
+          <ion-icon class="s" name="search"></ion-icon>
+        </a>
+      </div>
+      <div class="heading">
+        <ul>
+          <li><a href="teenused.html" class="under">Teenused</a></li>
+          <li><a href="hinnakiri.html" class="under">Hinnakiri</a></li>
+          <li><a href="hinnaparing.html" class="under">Hinnapäring</a></li>
+          <li><a href="kontakt.html" class="under">Kontakt</a></li>
+          <li><a href="meist.html" class="under">Meist</a></li>
+        </ul>
+      </br>
+      </div>
+      <div class="heading1">
+        <ion-icon name="menu" class="ham"></ion-icon>
+      </div>
     </header>
-    <section id="features">
-        <h2>Kvaliteetne autoremont mõistliku hinnaga</h2>
-        <p>Tallinas asuvas kaasaegses autoremonditöökojas 
-        teostatakse autoremont kõikidele sõiduautodele garantiitööna</p>
-    </section>
-    <section id="call-to-action">
-        <h2>Liitu meiega</h2>
-        <p>Muuda auto hooldamine sujuvamaks ja muretuks!</p>
-        <button onclick="window.location.href='register.html'">Broneeri aeg</button>
-    </section>
-    <section id="description">
-        <h2></h2>
-        <p>ARLO on kaasaegne mitme profiiliga autoremonditöökoda Tallinnas. Me pakume igat liiki sõiduautode remondi- ja muid teenuseid ning järgime põhimõtteid, mis ühtivad suurte edasimüüjate klientide ootustega: peame kinni sõiduki parandamise lubatud tähtaegadest, tuvastame kiiresti rikked, kasutame kvaliteetseid seadmeid ja kulumaterjale, säilitame teie sõiduki teenindusajaloo, tuletame meelde järjekordse külastuse vajadusest ning anname kõikidele töödele garantii.</p>
-        <img src="images/1.png" alt="Kirjeldus pildist" />
-    </section>
-    <hr class="section-divider">
-    <section id="description">
-        <h2></h2>
-        <p>ARLOs on olemas kõik, mida on vaja teie sõiduauto diagnostikaks, paranduseks ja hoolduseks. Oma töös kasutame ainult tänapäevaseid seadmeid, kvaliteetseid kulumaterjale ja usaldusväärsete tootjate varuosi (originaale ja kvaliteetseid kontrollitud analooge).</p>
-        <img src="images/2.png" alt="Kirjeldus pildist" />
-    </section>
-    <hr class="section-divider">
-    <section id="description">
-        <h2></h2>
-        <p>Meil töötavad kogenud meistrid, kes on spetsialiseerunud konkreetsetele automarkidele ja haruldastele riketele. Iga päev parandatakse CARVEXis erinevaid sõiduautode mudeleid ja marke nii suurettevõtete kui ka eraklientide jaoks. Oleme harjunud töötama operatiivselt ja kvaliteetselt, oskame oma aega ja koormust kavandada, tuvastame kiiresti vajalikud tööd ning järgime täpselt tootja soovitatud tehnoloogiaprotsesse.</p>
-        <img src="images/3.jpg" alt="Kirjeldus pildist" />
-    </section>
-    <hr class="section-divider">
+    <section>
+      <br>
 
-    <button onclick="window.location.href='hinnakiri.html'">Hinnakiri</button>
-
-    
-    <footer>
-        <p>&copy; 2024 Auto Hooldus Platvorm. Kõik õigused kaitstud.</p>
-    </footer>
-</body>
-</html>
+      <div class="section">
+        <div class="section1">
+          <div class="img-slider">
+            <img src="https://media.istockphoto.com/id/1364951753/photo/auto-service-interior-background-with-cars-on-the-lift.jpg?s=612x612&w=0&k=20&c=jd3IpV-koWUZrSHkwSwSdcA-s7bCRwcY233pSQafUJ4=" alt="" class="img">
+            <img src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=" alt="" class="img">
+            <img src="https://media.istockphoto.com/id/1407846366/photo/car-care-maintenance-and-servicing-close-up-hand-technician-auto-mechanic-using-the-wrench-to.jpg?s=612x612&w=0&k=20&c=yuSKGJfjI8CztFPuoXPs2PyfBezIROPz3iAenls6ly4=" alt="" class="img">
+            <img src="https://media.istockphoto.com/id/1497239622/photo/customer-and-automotive-technician-talking-about-the-car-problem-in-a-workshop.jpg?s=612x612&w=0&k=20&c=w-vftkUlyYFu0awn6ElDdc1BWocdPgyyw3Qc9BBD1-w=" alt="" class="img">
+            <img src="https://media.istockphoto.com/id/1165311626/photo/mechanic-using-a-ratchet-wrench.jpg?s=2048x2048&w=is&k=20&c=55Ck8H4bL94KiK0ZAjVwUYLQsHc9lNNmHmNKv9wyHro=" alt="" class="img">
+          </div>
+  
+        
