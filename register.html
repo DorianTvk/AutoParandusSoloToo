@@ -35,7 +35,10 @@
         }
         input[type="text"],
         input[type="email"],
-        input[type="password"] {
+        select,
+        input[type="number"],
+        input[type="date"],
+        input[type="time"] {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -51,7 +54,7 @@
             width: 100%;
         }
         input[type="submit"]:hover {
-            background: #2c3e50; /* Tumedam värv hover efektiks */
+            background: #2c3e50;
         }
         footer {
             text-align: center;
@@ -63,6 +66,19 @@
             width: 100%;
         }
     </style>
+    <script>
+        function updatePrice() {
+            const serviceSelect = document.getElementById('service');
+            const selectedOption = serviceSelect.options[serviceSelect.selectedIndex];
+            const priceInput = document.getElementById('price');
+
+            if (selectedOption.value) {
+                priceInput.value = selectedOption.getAttribute('data-price');
+            } else {
+                priceInput.value = '';
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -70,40 +86,53 @@
     </header>
     <section>
         <h2>Broneeri omale aeg!</h2>
-        <form action="submit_registration.html" method="post">
-            <label for="name">Ees- perenimi:</label>
+        <form id="bookingForm" action="submit_registration.php" method="post">
+            <label for="name">Ees- ja perenimi:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">E-post:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="pnumber">Telefoni number:</label>
-            <input type="pnumber" id="pnumber" name="pnumber" required>
+            <input type="text" id="pnumber" name="pnumber" required>
 
             <label for="vehicleType">Sõiduki tüüp:</label>
             <select id="vehicleType" name="vehicleType" required>
                 <option value="">Vali sõiduki tüüp</option>
-                <option value="M-kategooria">Sedaan</option>
-                <option value="N-kategooria">Hatchback</option>
-                <option value="L-kategooria">Krossover </option>
-                <option value="T-kategooria">Maastur</option>
-                <option value="O-kategooria">Cabriolet</option>
-                <option value="O-kategooria">Kupee </option>
-                <option value="O-kategooria">Limusiin</option>
-                <option value="O-kategooria">Pickup</option>
-
+                <option value="Sedaan">Sedaan</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Krossover">Krossover</option>
+                <option value="Maastur">Maastur</option>
+                <option value="Cabriolet">Cabriolet</option>
+                <option value="Kupee">Kupee</option>
+                <option value="Limusiin">Limusiin</option>
+                <option value="Pickup">Pickup</option>
             </select>
+
+            <label for="service">Vali teenus:</label>
+            <select id="service" name="service" required onchange="updatePrice()">
+                <option value="">Vali teenus</option>
+                <option value="Autohooldus" data-price="50">Autohooldus</option>
+                <option value="Õlivahetus" data-price="30">Õlivahetus</option>
+                <option value="Autodiagnostika" data-price="40">Autodiagnostika</option>
+                <option value="Rehvivahetus" data-price="25">Rehvivahetus</option>
+                <option value="Siduri vahetus" data-price="200">Siduri vahetus</option>
+                <option value="Hammasrihma vahetus" data-price="150">Hammasrihma vahetus</option>
+                <option value="Summuti remont" data-price="100">Summuti remont ja vahetus</option>
+                <option value="Generaatori remont" data-price="120">Generaatori ja Starteri remont</option>
+                <option value="Mootori remont" data-price="300">Mootori remont ja vahetus</option>
+            </select>
+
+            <label for="price">Hind (EUR):</label>
+            <input type="number" id="price" name="price" step="0.01" required readonly>
 
             <label for="date">Kuupäev:</label>
             <input type="date" id="date" name="date" required>
 
             <label for="time">Kellaaeg:</label>
             <input type="time" id="time" name="time" required>
-<br>
-<br>
-<br>
 
-<a href="submit_registration.html" style="display: inline-block; padding: 10px 20px; background-color: #35424a; color: white; text-decoration: none; border-radius: 5px;">Broneeri aeg</a>
+            <input type="submit" value="Broneeri aeg">
         </form>
     </section>
     <footer>
