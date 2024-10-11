@@ -6,6 +6,39 @@
     <title>Document</title>
 </head>
 <head>
+  <style>
+
+section {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        #description {
+            display: flex;
+            align-items: center; /* Keskendab pildi ja teksti vertikaalselt */
+        }
+
+        #description img {
+            max-width: 300px; /* Määrab pildi maksimaalse laius */
+            margin-left: 20px; /* Lisa tühik pildi ja teksti vahele */
+        }
+        button {
+            padding: 12px 25px;
+            background: #000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+
+      </style>
+
 
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -22,8 +55,6 @@
       </div>
       <div class="search">
   
-        <a href=""><input type="text" placeholder="search products" id="input">
-          <ion-icon class="s" name="search"></ion-icon>
         </a>
       </div>
       <div class="heading">
@@ -32,7 +63,6 @@
           <li><a href="hinnakiri.html" class="under">Hinnakiri</a></li>
           <li><a href="hinnaparing.html" class="under">Hinnapäring</a></li>
           <li><a href="kontakt.html" class="under">Kontakt</a></li>
-          <li><a href="meist.html" class="under">Meist</a></li>
         </ul>
       </br>
       </div>
@@ -40,11 +70,12 @@
         <ion-icon name="menu" class="ham"></ion-icon>
       </div>
     </header>
-    <section>
-      <br>
 
+    
+      <br>
+      
+      <div class="section1" >
       <div class="section">
-        <div class="section1">
           <div class="img-slider">
             <img src="https://media.istockphoto.com/id/1364951753/photo/auto-service-interior-background-with-cars-on-the-lift.jpg?s=612x612&w=0&k=20&c=jd3IpV-koWUZrSHkwSwSdcA-s7bCRwcY233pSQafUJ4=" alt="" class="img">
             <img src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=" alt="" class="img">
@@ -52,5 +83,45 @@
             <img src="https://media.istockphoto.com/id/1497239622/photo/customer-and-automotive-technician-talking-about-the-car-problem-in-a-workshop.jpg?s=612x612&w=0&k=20&c=w-vftkUlyYFu0awn6ElDdc1BWocdPgyyw3Qc9BBD1-w=" alt="" class="img">
             <img src="https://media.istockphoto.com/id/1165311626/photo/mechanic-using-a-ratchet-wrench.jpg?s=2048x2048&w=is&k=20&c=55Ck8H4bL94KiK0ZAjVwUYLQsHc9lNNmHmNKv9wyHro=" alt="" class="img">
           </div>
+          <section>
+            <br>
+            <br>
+
+          </section>
+          <section id="description">
+              <h2></h2>
+              <p>ARLO on kaasaegne mitme profiiliga autoremonditöökoda Tallinnas. Me pakume igat liiki sõiduautode remondi- ja muid teenuseid ning järgime põhimõtteid, mis ühtivad suurte edasimüüjate klientide ootustega: peame kinni sõiduki parandamise lubatud tähtaegadest, tuvastame kiiresti rikked, kasutame kvaliteetseid seadmeid ja kulumaterjale, säilitame teie sõiduki teenindusajaloo, tuletame meelde järjekordse külastuse vajadusest ning anname kõikidele töödele garantii.</p>
+              <img src="images/1.png" alt="Kirjeldus pildist" />
+          </section>
+          <hr class="section-divider">
+          <section id="description">
+              <h2></h2>
+              <p>ARLOs on olemas kõik, mida on vaja teie sõiduauto diagnostikaks, paranduseks ja hoolduseks. Oma töös kasutame ainult tänapäevaseid seadmeid, kvaliteetseid kulumaterjale ja usaldusväärsete tootjate varuosi (originaale ja kvaliteetseid kontrollitud analooge).</p>
+              <img src="images/2.png" alt="Kirjeldus pildist" />
+          </section>
+          <hr class="section-divider">
+          <section id="description">
+              <h2></h2>
+              <p>Meil töötavad kogenud meistrid, kes on spetsialiseerunud konkreetsetele automarkidele ja haruldastele riketele. Iga päev parandatakse CARVEXis erinevaid sõiduautode mudeleid ja marke nii suurettevõtete kui ka eraklientide jaoks. Oleme harjunud töötama operatiivselt ja kvaliteetselt, oskame oma aega ja koormust kavandada, tuvastame kiiresti vajalikud tööd ning järgime täpselt tootja soovitatud tehnoloogiaprotsesse.</p>
+              <img src="images/3.jpg" alt="Kirjeldus pildist" />
+          </section>
+
+          <hr class="section-divider">
+
+          <button onclick="window.location.href='hinnakiri.html'">Hinnakiri</button>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <footer>
+              <p>&copy; 2024 Auto Hooldus Platvorm. Kõik õigused kaitstud.</p>
+          </footer>
+          <br>
+          <br>
+
+      </body>
+      </html>
+      
   
         
