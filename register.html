@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
         body {
-          font-family: 'Times New Roman', serif; /* Change font to Times New Roman */
-          margin: 0;
+            font-family: 'Times New Roman', serif; /* Change font to Times New Roman */
+            margin: 0;
             padding: 0;
             background-color: #eef2f3;
         }
@@ -104,43 +104,49 @@
       </div>
       <div class="heading">
         <ul>
-          <li><a href="teenused.html" class="under">Teenused</a></li>
-          <li><a href="hinnakiri.html" class="under">Hinnakiri</a></li>
-          <li><a href="kontakt.html" class="under">Kontakt</a></li>
-          <li><a href="register.html" class="under">Broneeri aeg</a></li>
+            <li><a href="teenused.html" class="under">Teenused</a></li>
+            <li><a href="hinnakiri.html" class="under">Hinnakiri</a></li>
+            <li><a href="kontakt.html" class="under">Kontakt</a></li>
+            <li><a href="register.html" class="under">Broneeri aeg</a></li>
         </ul>
       </header>
       <section>
-        <form action="#" method="post">
-          <label for="name">Nimi:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">E-post:</label>
-          <input type="email" id="email" name="email" required>
-
-            <label for="message">Sõnum:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>    
-            <button type="submit">Saada Päring</button>
-          </form>
-          <br>
-          <div class="contact-info">
-            <h2>Meie Kontaktandmed</h2>
-            <p><strong>Telefon:</strong> +372 1234 5678</p>
-            <p><strong>E-post:</strong> info@arloremont.ee</p>
-            <p><strong>Aadress:</strong> Sõpruse pst 182, 13424 Tallinn</p>
-            <p><strong>Lahtiolekuajad:</strong> 08:30–21:45</p>
-        <head>
-          <br>
-
-        </div>
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.3039702582786!2d24.70284261501316!3d59.41156258199512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294f175ad851b%3A0x852a40ec29972fa3!2sS%C3%B5pruse%20pst%20182%2C%2013424%20Tallinn!5e0!3m2!1sen!2sfr!4v1695762751234!5m2!1sen!2sfr" 
-        width="2000" 
-        height="350" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"></iframe>
+        <section>
+            <h2>Broneeri meie juurde aeg</h2>
+            <br>
+            <form action="#" method="post">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" required>
     
-    </section>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="date">Broneeringu kuupäev:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Broneeringu kellaaeg:</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="service">Teenuse tüüp:</label>
+                <select id="service" name="service" required>
+                    <option value="auto_hooldus">Auto hooldus</option>
+                    <option value="õlivahetus">Õlivahetus</option>
+                    <option value="autodiagnostika">Autodiagnostika</option>
+                    <option value="rehvi_vahetus">Rehvivahetus</option>
+                    <option value="siduri_vahetus">Siduri Vahetus</option>
+                    <option value="hammasrihma_vahetus">Hammasrihma vahetus</option>
+                    <option value="summuti_remont_ja_vahetus">Summuti remont ja vahetus</option>
+                    <option value="generaatori_ja_starteri_remont">Generaatori ja Starteri remont</option>
+                    <option value="mootori_remont_ja_vahetus">Mootori remont ja vahetus</option>
+
+
+                </select>
+                
+                <br>
+
+                <button type="submit">Broneeri aeg</button>
+            </form>
+        </section>
   </body>
   </html>      
 
