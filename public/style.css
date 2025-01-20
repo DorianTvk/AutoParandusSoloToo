@@ -1,0 +1,130 @@
+/* Üldised stiilid */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Lisatud padding */
+    background-color: #f4f4f4;
+    }
+
+/* Navigeerimisriba stiil */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-links a:hover {
+    color:rgb(196, 117, 27);
+}
+
+/* Esilehe sektsioon */
+.hero-section {
+    background-image: url('auto-repair.jpg'); /* Lisa oma pildi link */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color:rgba(97, 97, 97, 0.94);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color:rgb(179, 164, 116);
+}
+
+/* Teenused sektsioon */
+#services {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Kontakt sektsioon */
+#contact {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

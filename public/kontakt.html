@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home.html">Auto Parandus</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="teenused.html">Teenused</a></li>
+            <li><a href="index.html">Broneeri aeg</a></li>
+            <li><a href="admin.html">ADMIN</a></li>
+        </ul>
+    </nav>
+
+    <h1>Kontaktige</h1>
+    <p>Kui teil on küsimusi või soovite broneeringut muuta, võtke meiega ühendust:</p>
+
+    <!-- Kontaktivorm -->
+    <form action="/saada-kontakt" method="POST">
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Sõnum:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Saada sõnum</button>
+    </form>
+
+</body>
+</html>
