@@ -1,12 +1,15 @@
 <?php
 $servername = "localhost";
 $username = "root"; 
-$password = ""; 
+$password = "12345"; 
 $dbname = "user_form";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+    die("Ühenduse ebaõnnestumine: " . $conn->connect_error);
 }
+
+$conn->set_charset("utf8mb4");
+
 ?>

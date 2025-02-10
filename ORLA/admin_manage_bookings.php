@@ -6,7 +6,7 @@ session_start();
 // Andmebaasi ühendus
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "12345";
 $dbname = "salong";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

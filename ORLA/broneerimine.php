@@ -37,20 +37,17 @@
             <label for="teenus">Teenused:</label>
             <select id="teenus" name="teenus" required>
                 <?php
-                // Andmebaasi ühendus
                 $servername = "localhost";
                 $username = "root";
-                $password = "";
+                $password = "12345";
                 $dbname = "salong";
 
                 $conn = new mysqli($servername, $username, $password, $dbname);
 
-                // Kontrolli ühendust
                 if ($conn->connect_error) {
                     die("Ühenduse ebaõnnestumine: " . $conn->connect_error);
                 }
 
-                // Küsime kõik teenused andmebaasist
                 $sql = "SELECT name FROM services";
                 $result = $conn->query($sql);
 
