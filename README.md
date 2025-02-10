@@ -8,3 +8,5 @@ Password: Adminkasutaja123
 
 http://localhost/phpmyadmin/ andmebaas localhostis
 http://localhost/ORLA/login_form.php esileht kliendile
+
+MYSQL PAROOL; 12345
